@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christ Army Academy</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+
+<body hx-get="/page2" hx-trigger="scroll" hx-swap="beforeend" hx-target="#content-container"
+    hx-indicator="#loading-indicator">
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Christ Army Academy</h1>
+                <button class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">🏠 Home</a></li>
+                    <li><a href="about.html">ℹ️ About</a></li>
+                    <li><a href="academics.html">🎓 Academics</a></li>
+                    <li><a href="admissions.html">📝 Admissions</a></li>
+                    <li><a href="gallery.html">🖼️ Gallery</a></li>
+                    <li><a href="contact.html">✉️ Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-slider-container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/school1.jpg" alt="Slide 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/school2.jpg" alt="Slide 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/school1.jpg" alt="Slide 3">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-text-container">
+                <h2 class="hero-title zoom-in">Welcome to Christ Army Academy</h2>
+               <p class="hero-subtitle">Building a Royal and Godly Heritage</p>
+                <button class="apply-button">Apply Now</button>
+            </div>
+            <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+            <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <div id="content-container">
+        <section class="section">
+            <div class="container">
+                <h2>Who We Are</h2>
+                <p>Christ Army Academy is dedicated to nurturing future leaders through academic excellence and spiritual
+                    growth.
+                    We provide a solid foundation for both primary and secondary education.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Our Programs</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Primary School</h3>
+                        <p>Strong foundation for young learners with holistic teaching methods.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Secondary School</h3>
+                        <p>Robust academic curriculum for developing critical and moral thinkers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>News & Events</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Inter-House Sports 2025</h3>
+                        <p>Join us for our annual sports competition in March.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Graduation Ceremony</h3>
+                        <p>Celebrating our Class of 2025 this July.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section testimonials">
+            <div class="container">
+                <h2>What Parents Say</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p>"Christ Army Academy has transformed my child's life. The spiritual and academic balance is
+                            unmatched!"</p>
+                        <span>- Mrs. Johnson, Parent</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"We saw a big difference in confidence and discipline after just one term."</p>
+                        <span>- Mr. Okoro, Parent</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section map-section">
+            <div class="container">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.352284291846!2d3.5008730739752774!3d6.603069722235695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bee7e8d6d708d%3A0x50e5f2226f2da449!2sSolebo%20St%2C%20Ikorodu%2C%20104101%2C%20Lagos!5e0!3m2!1sen!2sng!4v1746743332953!5m2!1sen!2sng" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Contact us at info@christarmyacademy.com | </p>
+            <p>Address: No. 2, Solebo Close, Near Benson B/Stop, Ikorodu, Lagos</p>
+            <p>© 2025 Christ Army Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <a href="https://wa.me/2349012345678?text=Hello%20Hello%20Christ%20Army%20Academy%2C%20I'd%20like%20to%20make%20an%20inquiry"
+        class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp" aria-label="WhatsApp Chat">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat Icon" />
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            speed: 1000,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script src="script.js"></script>
+    <div id="loading-indicator" class="loading-indicator" class="loading-indicator" style="display: none;">Loading...
+    </div>
+</body>
+
+</html>
